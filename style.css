@@ -13,7 +13,6 @@ nav {
 }
 
 /* Nav menu button */
-
 .nav-toggle {
   cursor: pointer;
   border: 0;
@@ -28,10 +27,6 @@ nav {
 .nav-toggle:hover,
 .nav-toggle:focus {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.hamburger {
-  position: relative;
 }
 
 .hamburger,

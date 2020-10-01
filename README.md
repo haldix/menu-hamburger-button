@@ -1,1 +1,1 @@
-# Menu Hamburger Button - animated, accessible
+# Menu Hamburger Button - animated, accessible, responsive
