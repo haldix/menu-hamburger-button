@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+  min-height: 30vh;
+  background-color: #333;
+}
+
+/* Nav menu button */
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  width: 1.5rem;
+  height: 0.1rem;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+}
+
+.hamburger::before {
+  transform: translateY(-0.5rem);
+}
+
+.hamburger::after {
+  transform: translateY(0.5rem);
+}
+
+/* button animation */
+.nav-toggle.open .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.open .hamburger::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.open .hamburger::after {
+  transform: rotate(-45deg);
+}
